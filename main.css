@@ -75,7 +75,7 @@ footer {
 
 /* tagline inside of header */
 .tagline {
-    margin-top: 7em;
+    margin-top: 30vh;
 }
 
 
@@ -132,12 +132,16 @@ footer {
 }
 
 .project-links {
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
+}
+
+.project-links > a {
+    margin: 10px;
 }
 
 .project-screenshot {
-    height: 100px;
+    height: 120px;
+    width: 300px;
     background-color: #eee;
 }
 
