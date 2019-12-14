@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav,
+footer {
+    background-color: #aaa;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    /* do I need these two?
+    left: 0;
+    right: 0; */
+    z-index: 10;
+}
+
+header {
+    padding: 12% 0;
+    text-align: center;
+    min-height: 100vh;
+    /* figure out how to add a little down arrow at the bottom so it is obvious to users to scroll down to see rest of content */
+}
+
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+}
+
+footer {
+    text-align: center;
+    padding: 1% 0;
+}
+
+/* navbar */
+/* it would be great if the navbar didn't obscure part of the view screen. when you hit the link to about, projects, or contact I want to be able to see a sliver of the pic above*/
+.name {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar > ul {
+    display: flex;
+    margin-top: .4em;
+}
+
+.navbar > ul > li {
+    margin-left: 2em;
+    height: .8em;
+}
+
+/* tagline inside of header */
+.tagline {
+    margin-top: 7em;
+}
+
+
+
+/* big pics for dividers --- maybe parallax scroll action? */
+.section-pic {
+    height: 100vh;
+    background-color: #eee;
+}
+
+.pic-box {
+    border: 1px solid black;
+    /* height: 200px; */
+    width: 100%;
+    margin: 0 auto;
+    background:
+    linear-gradient(to top right,
+    transparent calc(50% - 1px), gray calc(50% - 1px),
+    gray calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(to bottom right,
+    transparent calc(50% - 1px), gray calc(50% - 1px),
+    gray calc(50% + 1px), transparent calc(50% + 1px));
+}
+
+/* all content sections */
+.content {
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+/* about me section */
+.email-button {
+    /* button needs styling */
+    text-align: center;
+}
+
+/* projects section */
+/* responsive: when on bigger screens this should shift into a grid rather than a single column */
+/* these don't scale up now, as is. the screenshot and repo|live links stretch terribly */
+.project {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #ccc;
+}
+
+.tech-used {
+    display: flex;
+}
+
+.tech-used > li {
+    padding: 5px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-screenshot {
+    height: 100px;
+    background-color: #eee;
+}
+
+/* contact section */
+.contact-links {
+    /* these should be icons instead of text, it will look cooler */
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-links > li {
+    padding: 5px;
+}
