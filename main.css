@@ -239,41 +239,15 @@ footer {
 }
 
 @media screen and (max-width:485px) {
+
     .scroll-links {
         display: none;
     }
 
     /* not sure why this isn't working */
-    .icon {
+    .scroll-links a.icon {
         display: inline-block;
     }
-}
-
-@media screen and (max-width:435px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .name-link {
-        margin-bottom: 0px;
-        font-size: 1.2em;
-    }
-
-    .scroll-links {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.2em;
-    }
-}
-
-/* iphone 5 screen */
-@media screen and (max-width:320px) {
-    .actual-screenshot {
-        height: 120px;
-        width: 185px;
-        border: 1px solid white;
-    }
-
 }
 
 @media screen and (min-width:920px) {

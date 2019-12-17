@@ -7,3 +7,13 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
+
+
+function hamburger() {
+    let menu = document.getElementById('ham-menu');
+    if (menu.className === 'ham-menu') {
+        menu.className += ' responsive';
+    } else {
+        menu.className = 'ham-menu';
+    }
+}
