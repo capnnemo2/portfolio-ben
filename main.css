@@ -91,7 +91,10 @@ footer {
 }
 
 .responsive {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
 }
 
 .responsive > li {
@@ -249,6 +252,19 @@ footer {
     padding: 5px;
 }
 
+@media screen and (min-width:600px) {
+    .icon {
+        display: none;
+      }
+    
+      .scroll-links {
+        display: flex;
+        margin: 0;
+        padding-top: 5px;
+        width: 50%;
+        justify-content: space-around;
+      }
+}
 
 @media screen and (min-width:920px) {
     .container {
