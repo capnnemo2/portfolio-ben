@@ -73,7 +73,6 @@ footer {
 }
 
 .navbar > ul {
-    /* display: flex; */
     margin-top: .4em;
 }
 
@@ -83,9 +82,14 @@ footer {
     height: .8em;
 }
 
-.icon {
+.scroll-links {
     display: none;
 }
+
+#icon {
+    display: block;
+}
+
 
 
 /* all of the header things */
@@ -238,17 +242,6 @@ footer {
     padding: 5px;
 }
 
-@media screen and (max-width:485px) {
-
-    .scroll-links {
-        display: none;
-    }
-
-    /* not sure why this isn't working */
-    .scroll-links a.icon {
-        display: inline-block;
-    }
-}
 
 @media screen and (min-width:920px) {
     .container {
