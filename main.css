@@ -85,6 +85,7 @@ footer {
 .tagline {
     margin-top: 30vh;
     color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 
