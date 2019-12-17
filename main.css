@@ -83,6 +83,10 @@ footer {
     height: .8em;
 }
 
+.icon {
+    display: none;
+}
+
 
 /* all of the header things */
 .header-pic {
@@ -234,6 +238,16 @@ footer {
     padding: 5px;
 }
 
+@media screen and (max-width:485px) {
+    .scroll-links {
+        display: none;
+    }
+
+    /* not sure why this isn't working */
+    .icon {
+        display: inline-block;
+    }
+}
 
 @media screen and (max-width:435px) {
     .navbar {
@@ -254,10 +268,6 @@ footer {
 
 /* iphone 5 screen */
 @media screen and (max-width:320px) {
-
-
-    
-
     .actual-screenshot {
         height: 120px;
         width: 185px;
