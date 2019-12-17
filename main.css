@@ -61,9 +61,9 @@ footer {
 }
 
 /* navbar */
-.name {
+.name-link {
     text-transform: uppercase;
-    margin-top: 15px;
+    padding: 10px;
 }
 
 .navbar {
@@ -86,9 +86,10 @@ footer {
     display: none;
 }
 
-#icon {
-    display: block;
+.icon {
+    padding: 10px;
 }
+
 
 
 
