@@ -72,7 +72,7 @@ footer {
     justify-content: space-between;
 }
 
-.navbar > ul {
+/* .navbar > ul {
     margin-top: .4em;
 }
 
@@ -80,7 +80,7 @@ footer {
     display: inline-block;
     margin-right: 2em;
     height: .8em;
-}
+} */
 
 .scroll-links {
     display: none;
@@ -90,7 +90,13 @@ footer {
     padding: 10px;
 }
 
+.responsive {
+    display: block;
+}
 
+.responsive > li {
+    padding: 5px;
+}
 
 
 /* all of the header things */

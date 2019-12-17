@@ -11,9 +11,9 @@ $('a[href^="#"]').on('click', function(event) {
 
 function hamburger() {
     let menu = document.getElementById('ham-menu');
-    if (menu.className === 'ham-menu') {
+    if (menu.className === 'scroll-links') {
         menu.className += ' responsive';
     } else {
-        menu.className = 'ham-menu';
+        menu.className = 'scroll-links';
     }
 }
