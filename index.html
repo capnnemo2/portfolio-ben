@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3bacbb8b3.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <title>Ben Hernandez</title>
 </head>
 <body>
     <nav class="navbar" role="navigation">
-        <a class="name" href="#">Ben H</a>
+        <a class="name" href="#top">Ben H</a>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -19,7 +25,7 @@
     </nav>
 
     <main role="main">
-        <header role="banner" class="header-pic">
+        <header role="banner" class="header-pic" id="top">
             <h1 class="tagline">Hi, my name is Ben</h1>
         </header>
 
@@ -41,19 +47,36 @@
             <div class="content">
 
                 <h2>Projects</h2>
+                <div class="container">
 
-                <div class="project">
-                    <h3>Quiz App</h3>
-                    <ul class="tech-used">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <p>My first app. A short, simple quiz inspired by my time in the sea utilizing JavaScript.</p>
-                    <div class="project-screenshot">
-                        <img src="images/quiz-app.png" alt="screenshot of scuba quiz app" class="actual-screenshot">
+                    <div class="project">
+                        <h3>Quiz App</h3>
+                        <ul class="tech-used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>My first app. A short, simple quiz inspired by my time in the sea utilizing JavaScript.</p>
+                        <div class="project-screenshot">
+                            <img src="images/quiz-app.png" alt="screenshot of scuba quiz app" class="actual-screenshot">
+                        </div>
+                        <div class="project-links"><a href="#" rel="noopener noreferrer" target="_blank">Repo</a><span>|</span><a href="#" rel="noopener noreferrer" target="_blank">Live</a></div>
                     </div>
-                    <div class="project-links"><a href="#" rel="noopener noreferrer" target="_blank">Repo</a><span>|</span><a href="#" rel="noopener noreferrer" target="_blank">Live</a></div>
+
+                    <div class="project">
+                        <h3>Quiz App</h3>
+                        <ul class="tech-used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>My first app. A short, simple quiz inspired by my time in the sea utilizing JavaScript.</p>
+                        <div class="project-screenshot">
+                            <img src="images/quiz-app.png" alt="screenshot of scuba quiz app" class="actual-screenshot">
+                        </div>
+                        <div class="project-links"><a href="#" rel="noopener noreferrer" target="_blank">Repo</a><span>|</span><a href="#" rel="noopener noreferrer" target="_blank">Live</a></div>
+                    </div>
+
                 </div>
 
             </div>
@@ -66,9 +89,9 @@
             <div class="content">
                 <p>Don't be shy. Feel free to peruse my GitHub, check me out on LinkedIn, and send me an email.</p>
                 <ul class="contact-links">
-                    <li><a href="mailto:benjammin234@gmail.com">Email</a></li>
-                    <li><a href="https://github.com/capnnemo2" rel="noopener noreferrer" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/ben--hernandez/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:benjammin234@gmail.com"><i class="icons fas fa-envelope-square"></i></a></li>
+                    <li><a href="https://github.com/capnnemo2" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-github-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ben--hernandez/" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
             
@@ -83,6 +106,6 @@
         </footer>
 
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -29,6 +29,14 @@ footer {
     color: white;
 }
 
+nav,
+footer,
+header,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -58,7 +66,6 @@ footer {
 }
 
 /* navbar */
-/* it would be great if the navbar didn't obscure part of the view screen. when you hit the link to about, projects, or contact I want to be able to see a sliver of the pic above*/
 .name {
     text-transform: uppercase;
     margin-top: 15px;
@@ -80,7 +87,7 @@ footer {
     height: .8em;
 }
 
-/* header pic */
+/* all of the header things */
 .header-pic {
     background-image: url('images/snow-face.jpeg');
     background-size: cover;
@@ -91,8 +98,6 @@ footer {
     background-position: center;
 }
 
-
-/* tagline inside of header */
 .tagline {
     margin-top: 30vh;
     color: white;
@@ -101,31 +106,23 @@ footer {
 
 
 
-/* big pics for dividers --- maybe parallax scroll action? */
+/* big pics for dividers  */
 .section-pic {
     height: 100vh;
     background-color: #eee;
 }
-
-/* .parallax1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('images/kitten.jpg');
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-} */
 
 .sweet-pic-2 {
     background-image: url('images/norway-raft.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* should make the pic parallax ready */
+    /* parallax */
     background-attachment: fixed;
     background-position: center;
+
+    /* so that I stay the center of attention :) */
+    background-position-x: 100%;
 }
 
 .sweet-pic-3 {
@@ -159,6 +156,7 @@ footer {
     width: 65%;
     margin: 0 auto;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -178,6 +176,7 @@ footer {
     padding: 15px;
     transition: .2s;
     cursor: pointer;
+    font-family: 'Playfair Display', serif;
 }
 
 #send-email:hover {
@@ -187,7 +186,7 @@ footer {
 
 /* projects section */
 /* responsive: when on bigger screens this should shift into a grid rather than a single column */
-/* these don't scale up now, as is. the screenshot and repo|live links stretch terribly */
+
 .project {
     border: 1px solid white;
     padding: 10px;
@@ -232,6 +231,30 @@ footer {
     justify-content: space-around;
 }
 
+.icons {
+    font-size: 2em;
+    color: green;
+    transition: .2s;
+}
+
+.icons:hover {
+    color: darkgreen;
+}
+
 .contact-links > li {
     padding: 5px;
 }
+
+
+
+@media screen and (min-width:920px) {
+    .container {
+        display: flex;
+    }
+
+    .project {
+        margin: 15px;
+    }
+}
+
+/* should I tint the photos??? */
