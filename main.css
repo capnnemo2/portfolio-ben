@@ -73,9 +73,18 @@ footer {
     height: .8em;
 }
 
+/* header pic */
+.header-pic {
+    background-image: url('images/snow-face.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 /* tagline inside of header */
 .tagline {
     margin-top: 30vh;
+    color: white;
 }
 
 
@@ -98,6 +107,24 @@ footer {
     linear-gradient(to bottom right,
     transparent calc(50% - 1px), gray calc(50% - 1px),
     gray calc(50% + 1px), transparent calc(50% + 1px));
+}
+
+.sweet-pic-2 {
+    background-image: url('images/norway-raft.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sweet-pic-3 {
+    background-image: url('images/packraft.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sweet-pic-4 {
+    background-image: url('images/hiking-away.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* all content sections */
