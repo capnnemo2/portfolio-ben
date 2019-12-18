@@ -252,6 +252,10 @@ footer {
     padding: 5px;
 }
 
+
+/* what's a good min-width??? */
+
+/* also--need a way to remove .responsive if the user opens the hamburger menu then widens the browser. as it is, if they do so, the hamburger disappears as per this media query, but the drop down menu stays as is. w/o the hamburger there's no way to collapse it... */
 @media screen and (min-width:600px) {
     .icon {
         display: none;
