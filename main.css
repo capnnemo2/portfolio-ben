@@ -105,7 +105,7 @@ footer {
 
 .tagline {
     margin-top: 30vh;
-    color: white;
+    color: orangered;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 
@@ -160,6 +160,7 @@ footer {
 /* about me section */
 .email-button {
     text-align: center;
+    margin-top: 55px;
 }
 
 .email-button > button > a:hover {
@@ -168,12 +169,11 @@ footer {
 
 #send-email {
     background-color: green;
-    border: 0;
+    color: white;
     border-radius: 5px;
     padding: 15px;
     width: 150px;
     transition: .2s;
-    cursor: pointer;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }

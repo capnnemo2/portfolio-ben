@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7cRoboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3bacbb8b3.js" crossorigin="anonymous"></script>
     <script
   src="https://code.jquery.com/jquery-3.4.1.js"
@@ -15,7 +15,7 @@
     <title>Ben Hernandez</title>
 </head>
 <body>
-    <nav class="navbar" role="navigation">
+    <nav class="navbar">
         <a href="#top" class="name-link">Ben</a>
         <ul class="scroll-links" id="ham-menu">
             <li><a href="#about">About</a></li>
@@ -25,8 +25,8 @@
         <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fas fa-bars"></i></a>
     </nav>
 
-    <main role="main">
-        <header role="banner" class="header-pic" id="top">
+    <main>
+        <header class="header-pic" id="top">
             <h1 class="tagline">Hi, my name is Ben</h1>
         </header>
 
@@ -37,7 +37,7 @@
                 <p>Get in touch if you're curious how such seemingly incongruous activities as guiding a boat over a waterfall and creating a web app intersect.</p>
             </div>
             <div class="email-button">
-                <button type="button" id="send-email"><a href="mailto:benjammin234@gmail.com" rel="noopener noreferrer" target="_blank ">Email me</a></button>
+                <a class="button" id="send-email" href="mailto:benjammin234@gmail.com" rel="noopener noreferrer" target="_blank ">Email me</a>
             </div>
             
         </section>
@@ -51,7 +51,7 @@
                 <div class="container">
 
                     <div class="project">
-                        <h3>Quiz App</h3>
+                        <h3>Scuba Quiz</h3>
                         <ul class="tech-used">
                             <li>HTML</li>
                             <li>CSS</li>
@@ -74,9 +74,9 @@
             <div class="content">
                 <p>Don't be shy. Feel free to peruse my GitHub, check me out on LinkedIn, and send me an email.</p>
                 <ul class="contact-links">
-                    <li><a href="mailto:benjammin234@gmail.com"><i class="icons fas fa-envelope-square"></i></a></li>
-                    <li><a href="https://github.com/capnnemo2" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-github-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ben--hernandez/" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-linkedin"></i></a></li>
+                    <li><a aria-label="send email link" href="mailto:benjammin234@gmail.com"><i class="icons fas fa-envelope-square"></i></a></li>
+                    <li><a aria-label="github link" href="https://github.com/capnnemo2" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-github-square"></i></a></li>
+                    <li><a aria-label="linkedin link" href="https://www.linkedin.com/in/ben--hernandez/" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
             
