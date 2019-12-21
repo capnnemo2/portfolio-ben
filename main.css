@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: green;
+    color: orangered;
 }
 
 ul {
@@ -168,7 +168,7 @@ footer {
 }
 
 #send-email {
-    background-color: green;
+    background-color: orangered;
     color: white;
     border-radius: 5px;
     padding: 15px;
@@ -179,7 +179,7 @@ footer {
 }
 
 #send-email:hover {
-    background-color: darkgreen;
+    background-color: #c53906;
 }
 
 
@@ -222,12 +222,12 @@ footer {
 
 .icons {
     font-size: 4em;
-    color: green;
+    color: orangered;
     transition: .2s;
 }
 
 .icons:hover {
-    color: darkgreen;
+    color: #c53906;
 }
 
 .contact-links > li {
