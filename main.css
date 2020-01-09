@@ -191,6 +191,7 @@ footer {
     margin-bottom: 15px;
 }
 
+
 .tech-used {
     display: inline-block;
     margin-top: 0;
@@ -257,5 +258,6 @@ footer {
 
     .project {
         margin: 15px;
+        width: 50%;
     }
 }
