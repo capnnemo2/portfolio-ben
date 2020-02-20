@@ -1,116 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7cRoboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b3bacbb8b3.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display%7cRoboto&display=swap"
+      rel="stylesheet"
+    />
     <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+      src="https://kit.fontawesome.com/b3bacbb8b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <title>Ben Hernandez</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="#top" class="name-link">Ben</a>
-        <ul class="scroll-links" id="ham-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="icon" aria-label="hamburger drop-down menu" onclick="hamburger()"><i class="fas fa-bars"></i></a>
+      <a href="#top" class="name-link">Ben</a>
+      <ul class="scroll-links" id="ham-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        aria-label="hamburger drop-down menu"
+        onclick="hamburger()"
+        ><i class="fas fa-bars"></i
+      ></a>
     </nav>
 
     <main>
-        <header class="header-pic" id="top">
-            <h1 class="tagline">Hi, my name is Ben</h1>
-        </header>
+      <header class="header-pic" id="top">
+        <h1 class="tagline">Hi, my name is Ben</h1>
+      </header>
 
-        <section class="about" id="about">
+      <section class="about" id="about">
+        <div class="content">
+          <h2>About</h2>
+          <p>
+            I am a web developer who has emerged from the adventure tourism
+            industry. I pride myself on my ability to think on my feet, my
+            attention to detail, and my drive for efficiency. I enjoy applying
+            the skills and knowledge I have gained from whitewater rafting and
+            scuba diving to the creative process of web development.
+          </p>
+          <p>
+            Get in touch if you're curious how such seemingly incongruous
+            activities as guiding a boat over a waterfall and creating a web app
+            intersect.
+          </p>
+        </div>
+        <div class="email-button">
+          <a
+            class="button"
+            id="send-email"
+            href="mailto:benjammin234@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Email me</a
+          >
+        </div>
+      </section>
 
-            <div class="content">
-                <h2>About</h2>
-                <p>I am a web developer who has emerged from the adventure tourism industry. I pride myself on my ability to think on my feet, my attention to detail, and my drive for efficiency. I enjoy applying the skills and knowledge I have gained from whitewater rafting and scuba diving to the creative process of web development.</p>
-                <p>Get in touch if you're curious how such seemingly incongruous activities as guiding a boat over a waterfall and creating a web app intersect.</p>
-            </div>
-            <div class="email-button">
-                <a class="button" id="send-email" href="mailto:benjammin234@gmail.com" rel="noopener noreferrer" target="_blank">Email me</a>
-            </div>
-            
-        </section>
+      <div class="sweet-pic-2 section-pic"></div>
 
-        <div class="sweet-pic-2 section-pic"></div>
-
-        <section class="projects" id="projects">
-            <div class="content">
-
-                <h2>Projects</h2>
-                <div class="container">
-
-                    <div class="project">
-                        <h3>Scuba Quiz</h3>
-                        <ul class="tech-used">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                        </ul>
-                        <p>My first app. A short, simple quiz inspired by my time in the sea utilizing JavaScript. Users get scored and have the option to take the quiz again.</p>
-                        <div class="screenshot-and-links">
-                            <img src="images/quiz-app.png" alt="screenshot of scuba quiz app" class="actual-screenshot">
-                            <div class="project-links"><a href="https://github.com/capnnemo2/quiz-app" rel="noopener noreferrer" target="_blank">Repo</a><span>|</span><a href="https://capnnemo2.github.io/quiz-app/" rel="noopener noreferrer" target="_blank">Live</a></div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="project">
-                        <h3>California Whitewater Rivers</h3>
-                        <ul class="tech-used">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                        </ul>
-                        <p>This app allows users to get information about rafting on the most popular rivers in California. The information will allow boaters to prepare for a private trip or to find an outfitter.</p>
-                        <div class="screenshot-and-links">
-                            <img src="images/ca-ww-rivers.png" alt="screenshot of CA whitewater rivers app" class="actual-screenshot">
-                            <div class="project-links"><a href="https://github.com/capnnemo2/California-Whitewater-Rivers" rel="noopener noreferrer" target="_blank">Repo</a><span>|</span><a href="https://capnnemo2.github.io/California-Whitewater-Rivers/" rel="noopener noreferrer" target="_blank">Live</a></div>
-                        </div>
-                        
-                    </div>
-
+      <section class="projects" id="projects">
+        <div class="content">
+          <h2>Projects</h2>
+          <div class="container">
+            <div class="project">
+              <h3>Do Ya Scuba</h3>
+              <ul class="tech-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+              </ul>
+              <p>
+                My first app. A short, simple quiz inspired by my time in the
+                sea utilizing JavaScript. Users get scored and have the option
+                to take the quiz again.
+              </p>
+              <div class="screenshot-and-links">
+                <img
+                  src="images/quiz-app.png"
+                  alt="screenshot of scuba quiz app"
+                  class="actual-screenshot"
+                />
+                <div class="project-links">
+                  <a
+                    href="https://github.com/capnnemo2/quiz-app"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Repo</a
+                  ><span>|</span
+                  ><a
+                    href="https://capnnemo2.github.io/quiz-app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Live</a
+                  >
                 </div>
-
+              </div>
             </div>
-        </section>
 
-        <div class="sweet-pic-3 section-pic"></div>
-
-        <section class="contact" id="contact">
-            
-            <div class="content">
-                <h2>Contact</h2>
-                <p>Don't be shy. Feel free to peruse my GitHub, check me out on LinkedIn, and send me an email.</p>
-                <ul class="contact-links">
-                    <li><a aria-label="send email link" href="mailto:benjammin234@gmail.com"><i class="icons fas fa-envelope-square" title="Send Ben an email"></i></a></li>
-                    <li><a aria-label="github link" href="https://github.com/capnnemo2" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-github-square" title="Check out Ben's GitHub"></i></a></li>
-                    <li><a aria-label="linkedin link" href="https://www.linkedin.com/in/ben--hernandez/" rel="noopener noreferrer" target="_blank"><i class="icons fab fa-linkedin" title="Check Ben out on LinkedIn"></i></a></li>
-                </ul>
+            <div class="project">
+              <h3>California Whitewater Rivers</h3>
+              <ul class="tech-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+              </ul>
+              <p>
+                This app allows users to get information about rafting on the
+                most popular rivers in California. The information will allow
+                boaters to prepare for a private trip or to find an outfitter.
+              </p>
+              <div class="screenshot-and-links">
+                <img
+                  src="images/ca-ww-rivers.png"
+                  alt="screenshot of CA whitewater rivers app"
+                  class="actual-screenshot"
+                />
+                <div class="project-links">
+                  <a
+                    href="https://github.com/capnnemo2/California-Whitewater-Rivers"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Repo</a
+                  ><span>|</span
+                  ><a
+                    href="https://capnnemo2.github.io/California-Whitewater-Rivers/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Live</a
+                  >
+                </div>
+              </div>
             </div>
-            
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <div class="sweet-pic-4 section-pic pic-box"></div>
+      <div class="sweet-pic-3 section-pic"></div>
 
-        <footer>
-            <p>&copy;2019 Ben Hernandez</p>
-        </footer>
+      <section class="contact" id="contact">
+        <div class="content">
+          <h2>Contact</h2>
+          <p>
+            Don't be shy. Feel free to peruse my GitHub, check me out on
+            LinkedIn, and send me an email.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <a
+                aria-label="send email link"
+                href="mailto:benjammin234@gmail.com"
+                ><i
+                  class="icons fas fa-envelope-square"
+                  title="Send Ben an email"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="github link"
+                href="https://github.com/capnnemo2"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i
+                  class="icons fab fa-github-square"
+                  title="Check out Ben's GitHub"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="linkedin link"
+                href="https://www.linkedin.com/in/ben--hernandez/"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i
+                  class="icons fab fa-linkedin"
+                  title="Check Ben out on LinkedIn"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <div class="sweet-pic-4 section-pic pic-box"></div>
+
+      <footer>
+        <p>&copy;2019 Ben Hernandez</p>
+      </footer>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
