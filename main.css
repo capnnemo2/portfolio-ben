@@ -1,32 +1,32 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: .8em;
-    transition: .2s;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+  transition: 0.2s;
 }
 
 a:hover {
-    color: orangered;
+  color: orangered;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav,
 footer {
-    background-color: rgb(0, 0, 0);
-    color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 nav,
@@ -34,230 +34,224 @@ footer,
 header,
 h2,
 h3 {
-    font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 nav {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 header {
-    padding: 12% 0;
-    text-align: center;
-    min-height: 100vh;
+  padding: 12% 0;
+  text-align: center;
+  min-height: 100vh;
 }
 
 section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
 }
 
 footer {
-    text-align: center;
-    padding: 1% 0;
-    font-size: .6em;
+  text-align: center;
+  padding: 1% 0;
+  font-size: 0.6em;
 }
 
 /* navbar */
 .name-link {
-    text-transform: uppercase;
-    padding: 10px;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .scroll-links {
-    display: none;
+  display: none;
 }
 
 .icon {
-    padding: 10px;
+  padding: 10px;
 }
 
 .responsive {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .responsive > li {
-    padding: 5px;
+  padding: 5px;
 }
-
 
 /* all of the header things */
 .header-pic {
-    background-image: url('images/snow-face.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("images/snow-face.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    /* parallax */
-    background-attachment: fixed;
-    background-position: center;
+  /* parallax */
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .tagline {
-    margin-top: 30vh;
-    color: orangered;
-    text-shadow: 0.1em 0.1em 0.2em black;
+  margin-top: 30vh;
+  color: orangered;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
-
-
 
 /* big pics for dividers  */
 .section-pic {
-    height: 100vh;
-    background-color: #eee;
+  height: 100vh;
+  background-color: #eee;
 }
 
 .sweet-pic-2 {
-    background-image: url('images/norway-raft.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-position-x: 100%;
+  background-image: url("images/norway-raft.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-position-x: 100%;
 }
 
 .sweet-pic-3 {
-    background-image: url('images/packraft.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  background-image: url("images/packraft.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .sweet-pic-4 {
-    background-image: url('images/hiking-away.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  background-image: url("images/hiking-away.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .about,
 .projects,
 .contact {
-    background-color: black;
+  background-color: black;
 }
 
 /* all content sections */
 .content {
-    width: 65%;
-    margin: 0 auto;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
-
 
 /* about me section */
 .email-button {
-    text-align: center;
-    margin-top: 55px;
+  text-align: center;
+  margin-top: 55px;
 }
 
 .email-button > button > a:hover {
-    color: white;
+  color: white;
 }
 
 #send-email {
-    background-color: orangered;
-    color: black;
-    border-radius: 5px;
-    padding: 15px;
-    width: 150px;
-    transition: .2s;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    font-weight: 900;
+  background-color: orangered;
+  color: black;
+  border-radius: 5px;
+  padding: 15px;
+  width: 150px;
+  transition: 0.2s;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 #send-email:hover {
-    background-color: #c53906;
+  background-color: #c53906;
 }
-
 
 /* projects section */
 .project {
-    border: 1px solid white;
-    padding: 10px;
-    margin-bottom: 15px;
+  border: 1px solid white;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
-
 .tech-used {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .tech-used > li {
-    font-size: .8em;
+  font-size: 0.8em;
 }
 
 .project-links {
-    text-align: center;
+  text-align: center;
 }
 
 .project-links > a {
-    margin: 10px;
+  margin: 10px;
 }
 
 .actual-screenshot {
-    margin: 0 auto;
-    width: 100%;
-    border: 1px solid white;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid white;
 }
 
 /* contact section */
 .contact-links {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .icons {
-    font-size: 4em;
-    color: orangered;
-    transition: .2s;
+  font-size: 4em;
+  color: orangered;
+  transition: 0.2s;
 }
 
 .icons:hover {
-    color: #c53906;
+  color: #c53906;
 }
 
 .contact-links > li {
-    padding: 5px;
+  padding: 5px;
 }
 
-@media screen and (min-width:600px) {
-    .icon {
-        display: none;
-      }
-    
-      .scroll-links {
-        display: flex;
-        margin: 0;
-        flex-direction: row;
-        padding-top: 5px;
-        width: 50%;
-        justify-content: space-around;
-      }
+@media screen and (min-width: 600px) {
+  .icon {
+    display: none;
+  }
+
+  .scroll-links {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    padding-top: 5px;
+    width: 50%;
+    justify-content: space-around;
+  }
 }
 
-@media screen and (min-width:920px) {
-    .container {
-        display: flex;
-    }
+@media screen and (min-width: 920px) {
+  .container {
+    display: flex;
+  }
 
-    .project {
-        margin: 15px;
-        width: 50%;
-    }
+  .project {
+    margin: 15px auto;
+    width: 50%;
+  }
 }
