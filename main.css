@@ -3,28 +3,29 @@
 }
 
 :root {
-  --color-1: #721817;
+  /* all colors */
   --color-2: #342e37;
   --color-3: #357ded;
-  --color-4: #d7f9f1;
-  --color-5: #4b7f52;
+  --color-4: white;
 
+  /* font colors */
   --font-content-color: white;
-  --font-project-color: #342e37;
-
-  --project-link-color: #357ded;
-  --project-link-hover: #342e37;
-
-  --background-img: rgba(53, 125, 237, 0.1);
-
+  --font-project-color: var(--color-2);
+  --project-link-color: var(--color-3);
+  --project-link-hover: var(--color-2);
   --link-color: white;
-  --link-hover: #357ded;
-  --nav-color: #342e37;
-  --background-color: #357ded;
-  --project-color: #dcedff;
-  --btn-color: #357ded;
+  --link-hover: var(--color-3);
+  --nav-color: var(--color-2);
+
+  /* btn colors */
+  --btn-color: var(--color-3);
   --btn-hover: #2259b3;
-  --content-bckgrnd-color: #342e37;
+
+  /* background colors */
+  --background-img: rgba(53, 125, 237, 0.1);
+  --background-color: var(--color-3);
+  --project-color: var(--color-4);
+  --content-bckgrnd-color: var(--color-2);
 
   --bckgrnd-header-img-margin: 50px 10px 10px 10px;
   --bckgrnd-img-margin: 10px;
