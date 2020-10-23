@@ -2,21 +2,50 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* all colors */
+  --color-2: #342e37;
+  --color-3: #357ded;
+  --color-4: white;
+
+  /* font colors */
+  --font-content-color: white;
+  --font-project-color: var(--color-2);
+  --project-link-color: var(--color-3);
+  --project-link-hover: var(--color-2);
+  --link-color: white;
+  --link-hover: var(--color-3);
+  --nav-color: var(--color-2);
+
+  /* btn colors */
+  --btn-color: var(--color-3);
+  --btn-hover: #2259b3;
+
+  /* background colors */
+  --background-img: rgba(53, 125, 237, 0.1);
+  --background-color: var(--color-3);
+  --project-color: var(--color-4);
+  --content-bckgrnd-color: var(--color-2);
+
+  --bckgrnd-header-img-margin: 50px 10px 10px 10px;
+  --bckgrnd-img-margin: 10px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  color: #444;
+  color: var(--project-color);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--link-color);
   font-size: 0.8em;
   transition: 0.2s;
 }
 
 a:hover {
-  color: orangered;
+  color: var(--link-hover);
 }
 
 ul {
@@ -25,8 +54,8 @@ ul {
 
 nav,
 footer {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: var(--nav-color);
+  color: var(--font-content-color);
 }
 
 nav,
@@ -51,7 +80,7 @@ header {
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: var(--background-color);
 }
 
 footer {
@@ -93,9 +122,14 @@ footer {
 
 /* all of the header things */
 .header-pic {
-  background-image: url("images/snow-face.jpeg");
+  background-image: linear-gradient(
+      var(--background-img),
+      var(--background-img)
+    ),
+    url("images/snow-face.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: var(--bckgrnd-header-img-margin);
 
   /* parallax */
   background-attachment: fixed;
@@ -104,52 +138,67 @@ footer {
 
 .tagline {
   margin-top: 30vh;
-  color: orangered;
-  text-shadow: 0.1em 0.1em 0.2em black;
+  color: var(--link-color);
+  text-shadow: 0.1em 0.1em 0.2em #011627;
 }
 
 /* big pics for dividers  */
 .section-pic {
   height: 100vh;
-  background-color: #eee;
+  background-color: var(--project-color);
 }
 
 .sweet-pic-2 {
-  background-image: url("images/norway-raft.jpeg");
+  background-image: linear-gradient(
+      var(--background-img),
+      var(--background-img)
+    ),
+    url("images/norway-raft.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-position-x: 100%;
+  margin: var(--bckgrnd-img-margin);
 }
 
 .sweet-pic-3 {
-  background-image: url("images/packraft.jpeg");
+  background-image: linear-gradient(
+      var(--background-img),
+      var(--background-img)
+    ),
+    url("images/packraft.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  margin: var(--bckgrnd-img-margin);
 }
 
 .sweet-pic-4 {
-  background-image: url("images/hiking-away.jpg");
+  background-image: linear-gradient(
+      var(--background-img),
+      var(--background-img)
+    ),
+    url("images/hiking-away.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  margin: var(--bckgrnd-img-margin);
 }
 
 .about,
 .projects,
 .contact {
-  background-color: black;
+  background-color: var(--content-bckgrnd-color);
 }
 
 /* all content sections */
 .content {
   width: 85%;
   margin: 0 auto;
-  color: white;
+  color: var(--font-content-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -159,13 +208,13 @@ footer {
   margin-top: 55px;
 }
 
-.email-button > button > a:hover {
-  color: white;
-}
+/* .email-button > button > a:hover {
+  color: #f96900;
+} */
 
 #send-email {
-  background-color: orangered;
-  color: black;
+  background-color: var(--btn-color);
+  color: var(--font-content-color);
   border-radius: 5px;
   padding: 15px;
   width: 150px;
@@ -176,14 +225,25 @@ footer {
 }
 
 #send-email:hover {
-  background-color: #c53906;
+  background-color: var(--btn-hover);
 }
 
 /* projects section */
 .project {
   border: 1px solid white;
+  border-radius: 5px;
   padding: 10px;
   margin-bottom: 15px;
+  background-color: var(--project-color);
+  color: var(--font-project-color);
+}
+
+.project a {
+  color: var(--project-link-color);
+}
+
+.project a:hover {
+  color: var(--project-link-hover);
 }
 
 .tech-used {
@@ -207,7 +267,7 @@ footer {
 .actual-screenshot {
   margin: 0 auto;
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 /* contact section */
@@ -218,12 +278,12 @@ footer {
 
 .icons {
   font-size: 4em;
-  color: orangered;
+  color: var(--btn-color);
   transition: 0.2s;
 }
 
 .icons:hover {
-  color: #c53906;
+  color: var(--btn-hover);
 }
 
 .contact-links > li {
