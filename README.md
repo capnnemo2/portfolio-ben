@@ -1,1 +1,1 @@
-What started as a wireframe has grown into my official portfolio site!
+The official portfolio of Ben Hernandez, the outdoor web developer.
